@@ -4,18 +4,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#92E2E91E"
+    android:backgroundTint="#FFFFFF"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/timeLabelText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="129dp"
-        android:layout_marginBottom="69dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginBottom="203dp"
         android:text="TIME"
         android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/secondText"
+        app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,19 +32,48 @@
         android:textSize="58sp"
         app:layout_constraintBottom_toTopOf="@+id/startButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/timeLabelText" />
+        app:layout_constraintTop_toBottomOf="@+id/timeLabelText"
+        app:layout_constraintVertical_bias="0.029" />
 
     <Button
         android:id="@+id/startButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="270dp"
+        android:layout_marginBottom="92dp"
         android:text="START"
         android:textSize="36sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="104dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="9dp"
+        android:foregroundGravity="bottom"
+        app:layout_constraintBottom_toTopOf="@+id/tapButton"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/secondText" />
+        app:layout_constraintTop_toBottomOf="@+id/timeLabelText"
+        app:srcCompat="@drawable/leval1" />
+
+    <Button
+        android:id="@+id/tapButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="161dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="206dp"
+        android:backgroundTint="#9C9C27B0"
+        android:text="Tap!"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
